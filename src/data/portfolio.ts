@@ -27,7 +27,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: '/images/portfolio/raya-rumble-cover.png',
     gallery: [
       '/images/portfolio/raya-rumble/raya-rumble-1.jpg',
-      '/videos/portfolio/raya-rumble.mp4',
+      'https://res.cloudinary.com/dcajsi7py/video/upload/v1780772287/raya-rumble_dy6htm.mp4',
       '/images/portfolio/raya-rumble/raya-rumble-2.jpg',
       '/images/portfolio/raya-rumble/raya-rumble-3.jpg',
       '/images/portfolio/raya-rumble/raya-rumble-4.jpg',
@@ -69,7 +69,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: '/images/portfolio/cedook/cedook.png',
     gallery: [
       '/images/portfolio/cedook/cedook-1.jpg',
-      '/videos/cedook.mp4',
+      'https://res.cloudinary.com/dcajsi7py/video/upload/v1780773434/cedook_fe3q9s.mp4',
       '/images/portfolio/cedook/cedook-2.jpg',
       '/images/portfolio/cedook/cedook-3.jpg',
       '/images/portfolio/cedook/cedook-4.jpg',
@@ -107,7 +107,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: '/images/portfolio/aeki/aeki.jpg',
     gallery: [
       '/images/portfolio/aeki/aeki-1.jpg',
-      '/videos/aeki.mp4',
+      'https://res.cloudinary.com/dcajsi7py/video/upload/v1780773439/aeki_n1bzpd.mp4',
       '/images/portfolio/aeki/aeki-2.jpg',
       '/images/portfolio/aeki/aeki-3.jpg',
       '/images/portfolio/aeki/aeki-4.jpg',

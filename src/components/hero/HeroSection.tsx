@@ -24,7 +24,7 @@ export function HeroSection() {
             className="h-full w-full object-cover opacity-30"
             poster="/images/hero-poster.jpg"
           >
-            <source src="/videos/hero-video.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dcajsi7py/video/upload/v1780773061/0606_1_fjzypn.mp4" type="video/mp4" />
           </video>
         </motion.div>
         <div className="absolute inset-0 bg-linear-to-b from-soft-black/60 via-soft-black/40 to-soft-black/80" />
