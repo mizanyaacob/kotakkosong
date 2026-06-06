@@ -85,8 +85,8 @@ export function ContactSection() {
 
               <div className="flex flex-col gap-5">
                 {[
-                  { Icon: Mail, label: 'Email', value: 'hello@kotakkosong.studio', href: 'mailto:hello@kotakkosong.studio' },
-                  { Icon: Phone, label: 'Phone', value: '+60 12-345 6789', href: 'tel:+60123456789' },
+                  { Icon: Mail, label: 'Email', value: 'kotakkosong.play@gmail.com', href: 'mailto:kotakkosong.play@gmail.com' },
+                  { Icon: Phone, label: 'Phone', value: '+60 11-2546 7436', href: 'tel:+601125467436' },
                   { Icon: MapPin, label: 'Location', value: 'Kuala Lumpur, Malaysia', href: undefined },
                 ].map(({ Icon, label, value, href }) => (
                   <div key={label} className="flex items-start gap-4">
