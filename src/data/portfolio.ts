@@ -24,7 +24,7 @@ export const portfolioItems: PortfolioItem[] = [
       'Fully customisable theming deployed across multiple brand activations',
     ],
     technologies: ['Unity', 'Local Multiplayer', 'Gamepad / Touchscreen', 'Custom Brand Theming'],
-    image: '/images/portfolio/raya-rumble-cover.png',
+    image: 'https://res.cloudinary.com/dcajsi7py/image/upload/v1780773769/raya-rumble-cover_xbjqld.png',
     gallery: [
       '/images/portfolio/raya-rumble/raya-rumble-1.jpg',
       'https://res.cloudinary.com/dcajsi7py/video/upload/v1780772287/raya-rumble_dy6htm.mp4',
