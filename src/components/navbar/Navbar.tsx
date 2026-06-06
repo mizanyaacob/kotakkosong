@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -44,28 +45,14 @@ export function Navbar() {
       >
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="group flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-yellow transition-transform duration-300 group-hover:scale-105">
-              <span className="text-[11px] font-black leading-none text-soft-black">KK</span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span
-                className={cn(
-                  'font-heading text-[15px] font-bold transition-colors',
-                  isTransparent ? 'text-white' : 'text-soft-black'
-                )}
-              >
-                Kotak Kosong
-              </span>
-              <span
-                className={cn(
-                  'text-[10px] font-medium uppercase tracking-widest transition-colors',
-                  isTransparent ? 'text-white/60' : 'text-soft-black/40'
-                )}
-              >
-                Studios
-              </span>
-            </div>
+          <Link href="/" className="group">
+            <Image
+              src="/images/logo/kotakkosong-logo.jpeg"
+              alt="Kotak Kosong Studios"
+              width={140}
+              height={40}
+              className="h-14 w-auto object-contain transition-opacity duration-300 group-hover:opacity-80"
+            />
           </Link>
 
           {/* Desktop Nav */}

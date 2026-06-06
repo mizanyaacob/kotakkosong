@@ -18,6 +18,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/images/logo/kotakkosong-logo.jpeg',
+    apple: '/images/logo/kotakkosong-logo.jpeg',
+  },
   title: {
     default: 'Kotak Kosong Studios | Interactive Event Experiences & Brand Activations',
     template: '%s | Kotak Kosong Studios',
