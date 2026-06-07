@@ -42,7 +42,7 @@ export function HeroSection() {
 
       <motion.div
         style={{ opacity }}
-        className="relative z-10 mx-auto w-full max-w-7xl px-6 lg:px-8"
+        className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-24 lg:px-8 lg:pt-0"
       >
         <div className="max-w-3xl">
           <motion.div
