@@ -113,20 +113,20 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:hello@kotakkosong.studio"
+                  href="mailto:kotakkosong.play@gmail.com"
                   className="flex items-start gap-3 text-sm text-white/60 transition-colors hover:text-yellow"
                 >
                   <Mail size={15} className="mt-0.5 shrink-0" />
-                  hello@kotakkosong.studio
+                  kotakkosong.play@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+60123456789"
+                  href="tel:+601125467436"
                   className="flex items-start gap-3 text-sm text-white/60 transition-colors hover:text-yellow"
                 >
                   <Phone size={15} className="mt-0.5 shrink-0" />
-                  +60 12-345 6789
+                  +60 11-2546 7436
                 </a>
               </li>
               <li>
