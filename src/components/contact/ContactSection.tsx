@@ -198,7 +198,7 @@ export function ContactSection() {
                         name="email"
                         type="email"
                         required
-                        placeholder="you@company.com"
+                        placeholder="kotakkosong.play@gmail.com"
                         value={form.email}
                         onChange={handleChange}
                         className={inputClass}
@@ -210,7 +210,7 @@ export function ContactSection() {
                         id="phone"
                         name="phone"
                         type="tel"
-                        placeholder="+60 12-345 6789"
+                        placeholder="+60 11-2546 7436"
                         value={form.phone}
                         onChange={handleChange}
                         className={inputClass}
