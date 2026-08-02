@@ -23,12 +23,17 @@ export function StorySection() {
             </FadeIn>
             <FadeIn direction="up" delay={0.2}>
               <p className="leading-relaxed">
-                We asked: <em className="font-semibold text-soft-black">what if people actually wanted to be there?</em> What if the experience was compelling enough that people sought it out, stayed longer, and told their friends? Game designers have been solving that exact problem for decades.
+                We asked: <em className="font-semibold text-soft-black">what if people actually wanted to be there?</em> Not obliged. Not incentivised. Wanting to be there, the way a child wants one more round before bed.
               </p>
             </FadeIn>
             <FadeIn direction="up" delay={0.3}>
               <p className="leading-relaxed">
-                That question became our studio. We started on event floors, but the problem turned out to be everywhere: a teacher losing a room of five-year-olds, a training module nobody finishes, a loyalty app nobody opens twice. So today we work as a gamification provider across all of it, education included, from early childhood learning to corporate training, alongside the campaigns and activations we started with.
+                That question became our studio. We started on event floors, but the same problem was waiting everywhere we looked. A teacher losing a room of five-year-olds by the second slide. A training module nobody finishes. A loyalty app nobody opens twice. It is always the same problem wearing different clothes, and game designers have been quietly solving it for forty years.
+              </p>
+            </FadeIn>
+            <FadeIn direction="up" delay={0.4}>
+              <p className="leading-relaxed">
+                So that is what we do now, as a gamification provider rather than an event studio. We build learning that four-year-olds beg to do again. Training that people finish without being chased. Campaigns worth returning to. Same craft every time, pointed at whatever needs to stop being ignored.
               </p>
             </FadeIn>
           </div>
@@ -36,8 +41,8 @@ export function StorySection() {
           {/* Mission & Vision */}
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {[
-              { label: 'Mission', text: 'Creating experiences people remember.' },
-              { label: 'Vision', text: 'Making anything worth engaging with playable.' },
+              { label: 'Mission', text: 'Make learning something people ask for.' },
+              { label: 'Vision', text: 'A world where nothing worth knowing is boring.' },
             ].map((item) => (
               <FadeIn key={item.label} direction="up" delay={0.3}>
                 <div className="rounded-2xl border border-medium-gray p-6">

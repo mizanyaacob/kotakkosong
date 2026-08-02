@@ -8,37 +8,37 @@ const steps = [
   {
     number: '01',
     title: 'Discover',
-    description: 'We dig into your audience, your setting, and your objective to understand what success really looks like.',
+    description: 'Who are they, how old are they, and what do you need them walking away knowing? We start there, never with a format.',
     icon: '🔍',
   },
   {
     number: '02',
     title: 'Design',
-    description: 'We design the game loop: the goal, the rules, the rewards, and the mechanics that fit your audience and their age.',
+    description: 'The goal, the rules, the rewards. We design the loop that makes people want one more go, tuned to the age in the room.',
     icon: '✏️',
   },
   {
     number: '03',
     title: 'Develop',
-    description: 'We build every interaction, from the UI to the hardware, with precision, testing every scenario before deployment.',
+    description: 'We build every interaction, from the interface to the hardware, then break it ourselves until nothing is left to break.',
     icon: '⚙️',
   },
   {
     number: '04',
     title: 'Deploy',
-    description: 'We handle setup, tech checks, and staff or educator onboarding, then go live with you so day one runs properly.',
+    description: 'Setup, tech checks, and proper onboarding for the teachers or staff who will run it. We are there on day one.',
     icon: '🚀',
   },
   {
     number: '05',
     title: 'Engage',
-    description: 'Players play, learn, and keep coming back, while we monitor, support, and optimise in real time.',
+    description: 'People play, learn, and come back for more. We watch how they actually behave and tune it as we go.',
     icon: '⚡',
   },
   {
     number: '06',
     title: 'Measure',
-    description: 'We deliver a full engagement report with data on participation, progress, retention, and outcomes.',
+    description: 'A full report on who took part, what they learned, and whether it moved the number you cared about.',
     icon: '📊',
   },
 ]
@@ -54,7 +54,7 @@ export function ExperienceJourney() {
         <SectionHeader
           eyebrow="Our Process"
           title="How We Bring Experiences to Life"
-          description="From the first brief to the post-launch numbers: one process, whether it ends up in a classroom or on an exhibition floor."
+          description="One process from first brief to final numbers, whether it ends up in a preschool classroom or on an exhibition floor."
           align="center"
           className="mb-20"
         />

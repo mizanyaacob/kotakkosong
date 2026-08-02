@@ -8,19 +8,19 @@ const values = [
     icon: '💡',
     title: 'Creativity',
     description:
-      'We don\'t copy, we invent. Every project starts with a blank canvas and a commitment to find a fresh, unexpected angle.',
+      'We don\'t copy, we invent. Every project starts on a blank page and a promise to find the angle nobody has tried yet.',
   },
   {
     icon: '🚀',
     title: 'Innovation',
     description:
-      'We push what gamification can do, combining emerging tech with timeless principles of play and human motivation.',
+      'We pair new technology with something much older: the rules of play that have held human attention for thousands of years.',
   },
   {
     icon: '🤝',
     title: 'Reliability',
     description:
-      'Term dates and launch dates do not move. We deliver what we promise: on spec, on budget, on time, every single time.',
+      'Term dates don\'t move. Launch dates don\'t move. Neither do we: on spec, on budget, on time, every single time.',
   },
   {
     icon: '🌱',
@@ -32,7 +32,7 @@ const values = [
     icon: '📈',
     title: 'Impact',
     description:
-      'Fun isn\'t enough on its own. Every experience we build is designed to move a real number: learning, participation, or retention.',
+      'Fun on its own is a nice afternoon. Everything we build is designed to move a real number: what they learned, how many took part, how many came back.',
   },
 ]
 

@@ -36,7 +36,7 @@ export function ServicesHero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="max-w-xl text-lg leading-relaxed text-white/60"
         >
-          From early learning games to training simulations, campaigns, and loyalty systems, we design and build the mechanics that make people want to take part.
+          A preschool lesson, a staff training module, a nationwide campaign. Whatever the brief, we design and build the mechanics that turn &ldquo;have to&rdquo; into &ldquo;want to&rdquo;.
         </motion.p>
       </div>
     </section>

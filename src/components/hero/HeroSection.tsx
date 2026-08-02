@@ -92,7 +92,7 @@ export function HeroSection() {
             transition={{ duration: 0.7, delay: 0.55 }}
             className="mb-10 max-w-xl text-lg leading-relaxed text-white/65"
           >
-            Lessons, campaigns, training, loyalty programmes: most of it gets tuned out. We turn it into something people actually want to play, come back to, and tell someone else about, whether they&apos;re four years old or forty.
+            Lessons. Training. Campaigns. Loyalty programmes. Most of it gets tuned out within seconds. We rebuild it as something people choose to play, finish, come back to, and tell someone else about, whether they&apos;re four years old or forty.
           </motion.p>
 
           <motion.div

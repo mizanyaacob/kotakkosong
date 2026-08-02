@@ -14,7 +14,7 @@ const stats = [
   {
     value: '2X',
     label: 'Time On Task',
-    description: 'People stay with a task far longer when it is structured as a game.',
+    description: 'People stay with a task far longer when it is built like a game.',
   },
   {
     value: '10,000+',
@@ -32,17 +32,17 @@ const reasons = [
   {
     title: 'People are wired to chase progress',
     description:
-      'A clear goal, a simple rule set, and feedback on every attempt. That loop works the same way on a five-year-old and a boardroom.',
+      'A clear goal, one simple rule, and instant feedback on every attempt. That loop is just as irresistible to a five-year-old as it is to a boardroom.',
   },
   {
     title: 'Participation beats presentation',
     description:
-      'Doing something builds memory that watching something never does. Play turns an audience into participants, and participants remember.',
+      'Nobody remembers the slide. Everybody remembers the round they lost. Doing something builds a kind of memory that watching something never will.',
   },
   {
     title: 'Play makes repetition bearable',
     description:
-      'Practice is where learning, habits, and loyalty are actually built. Games get people to volunteer for the reps.',
+      'Practice is where learning actually happens, and it is the part everyone avoids. Games get people to volunteer for the reps, then ask for more.',
   },
 ]
 
@@ -56,8 +56,8 @@ export function WhyItWorksSection() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeader
           eyebrow="Why It Works"
-          title="The Science Behind Engagement"
-          description="Gamification isn't just fun. The mechanics underneath it are how people learn, form habits, and keep coming back."
+          title="Play Is Not a Distraction From Learning"
+          description="It's the oldest learning tool we have. The mechanics underneath a good game are the same ones that make people focus, remember, and come back for more."
           align="center"
           dark
           className="mb-20"

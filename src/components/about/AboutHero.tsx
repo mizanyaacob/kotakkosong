@@ -26,8 +26,8 @@ export function AboutHero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="font-heading mb-6 max-w-3xl text-5xl font-bold leading-tight tracking-tight text-white md:text-6xl"
         >
-          We Turn Things People Ignore{' '}
-          <span className="text-yellow">Into Things They Play</span>
+          We Turn Things People Sit Through{' '}
+          <span className="text-yellow">Into Things They Ask For</span>
         </motion.h1>
 
         <motion.p
@@ -36,7 +36,7 @@ export function AboutHero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="max-w-2xl text-lg leading-relaxed text-white/60"
         >
-          Kotak Kosong Studios is a Malaysian gamification provider. We blend game design, technology, and human psychology to build experiences that pull people in and keep them there, in classrooms, campaigns, training rooms, and everywhere else attention is hard to win.
+          Kotak Kosong Studios is a Malaysian gamification provider. We combine game design, technology, and a stubborn interest in why people do anything at all, then use it to build experiences that pull people in and refuse to let go. Classrooms, campaigns, training rooms, and anywhere else attention has to be earned rather than assumed.
         </motion.p>
       </div>
     </section>

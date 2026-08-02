@@ -67,7 +67,7 @@ export function ServicesSection() {
         <SectionHeader
           eyebrow="What We Do"
           title="Gamification That Actually Changes Behaviour"
-          description="Classrooms, campaigns, training rooms, retail floors. Different rooms, same problem: getting people to engage. We solve it with game design."
+          description="A classroom. A campaign. A training room. A shop floor. Different rooms, same problem: nobody is paying attention. Game design is how we fix it."
           align="center"
           className="mb-16"
         />

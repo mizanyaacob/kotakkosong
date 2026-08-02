@@ -33,7 +33,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="mb-6 text-sm leading-relaxed text-white/50">
-              A Malaysian gamification provider. We use game design to make learning, campaigns, and training something people choose to take part in.
+              A Malaysian gamification provider. We use game design to turn learning, training, and campaigns into something people choose to do, not something they have to sit through.
             </p>
             <div className="flex items-center gap-3">
               <a

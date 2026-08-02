@@ -50,7 +50,7 @@ export function CTASection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mx-auto mb-12 max-w-xl text-lg text-soft-black/60"
         >
-          Tell us what you need people to learn, do, or remember. We&apos;ll show you how to turn it into something they actually want to play.
+          Tell us what you need people to learn, do, or remember. We&apos;ll show you how to turn it into the thing they can&apos;t wait to do again.
         </motion.p>
 
         <motion.div
