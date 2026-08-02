@@ -2,11 +2,11 @@ import Link from 'next/link'
 import { Instagram, Linkedin, Facebook, Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
 
 const services = [
-  { label: 'Event Games', href: '/services#event-games' },
-  { label: 'Interactive Experiences', href: '/services#interactive-experiences' },
-  { label: 'Brand Activations', href: '/services#brand-activations' },
-  { label: 'Digital Installations', href: '/services#digital-installations' },
-  { label: 'Gamification Systems', href: '/services#gamification-systems' },
+  { label: 'Custom Game Development', href: '/services#custom-games' },
+  { label: 'Learning & Education', href: '/services#learning-education' },
+  { label: 'Gamified Campaigns', href: '/services#gamified-campaigns' },
+  { label: 'Loyalty & Rewards', href: '/services#loyalty-systems' },
+  { label: 'Gamification Strategy', href: '/services#gamification-strategy' },
 ]
 
 const company = [
@@ -33,7 +33,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="mb-6 text-sm leading-relaxed text-white/50">
-              We create interactive experiences that attract people, engage them, and leave lasting memories.
+              A Malaysian gamification provider. We use game design to make learning, campaigns, and training something people choose to take part in.
             </p>
             <div className="flex items-center gap-3">
               <a

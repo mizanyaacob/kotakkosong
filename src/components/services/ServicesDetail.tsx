@@ -1,11 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { CheckCircle2, Gamepad2, Layers, Zap, Monitor, Trophy, Users } from 'lucide-react'
+import { CheckCircle2, Gamepad2, Layers, Zap, Trophy, GraduationCap } from 'lucide-react'
 import { services, serviceDetails } from '@/data/services'
 import type { LucideIcon } from 'lucide-react'
 
-const iconMap: Record<string, LucideIcon> = { Gamepad2, Layers, Zap, Monitor, Trophy, Users }
+const iconMap: Record<string, LucideIcon> = { Gamepad2, Layers, Zap, Trophy, GraduationCap }
 
 export function ServicesDetail() {
   return (

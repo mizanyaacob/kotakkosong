@@ -14,25 +14,25 @@ const values = [
     icon: '🚀',
     title: 'Innovation',
     description:
-      'We push boundaries of what\'s possible at events, combining emerging tech with timeless principles of human engagement.',
+      'We push what gamification can do, combining emerging tech with timeless principles of play and human motivation.',
   },
   {
     icon: '🤝',
     title: 'Reliability',
     description:
-      'Events run on tight timelines. We deliver what we promise: on spec, on budget, on time, every single time.',
+      'Term dates and launch dates do not move. We deliver what we promise: on spec, on budget, on time, every single time.',
   },
   {
     icon: '🌱',
     title: 'Collaboration',
     description:
-      'The best outcomes come from working closely with our clients. We treat your team as partners, not just briefing sources.',
+      'The best outcomes come from working closely with the people who know the audience: your team, your trainers, your teachers.',
   },
   {
     icon: '📈',
     title: 'Impact',
     description:
-      'Beautiful isn\'t enough. Every experience we build is designed to drive measurable outcomes for your brand.',
+      'Fun isn\'t enough on its own. Every experience we build is designed to move a real number: learning, participation, or retention.',
   },
 ]
 

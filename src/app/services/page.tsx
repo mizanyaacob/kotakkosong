@@ -7,7 +7,7 @@ import { CTASection } from '@/components/cta/CTASection'
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    'Explore Kotak Kosong Studios\' full range of interactive event services: event games, brand activations, digital installations, gamification systems, and more.',
+    'Explore Kotak Kosong Studios\' gamification services: custom game development, learning and education gamification from early childhood upward, gamified campaigns, loyalty and reward systems, and gamification strategy.',
 }
 
 export default function ServicesPage() {

@@ -6,12 +6,13 @@ import { Send, Mail, Phone, MapPin, Instagram, Linkedin, Facebook, CheckCircle2 
 import { FadeIn } from '@/components/animations/FadeIn'
 
 const projectTypes = [
-  'Event Game',
-  'Brand Activation',
-  'Interactive Installation',
-  'Gamification System',
-  'Digital Experience',
-  'Full Event Engagement',
+  'Early Childhood / Preschool Learning',
+  'School or Classroom Learning',
+  'Corporate Training & Onboarding',
+  'Custom Game Development',
+  'Gamified Campaign or Activation',
+  'Loyalty & Reward System',
+  'Gamification Strategy Only',
   'Not sure yet',
 ]
 
@@ -28,7 +29,7 @@ type FormData = {
   company: string
   email: string
   phone: string
-  eventDate: string
+  targetDate: string
   projectType: string
   budget: string
   message: string
@@ -40,7 +41,7 @@ export function ContactSection() {
     company: '',
     email: '',
     phone: '',
-    eventDate: '',
+    targetDate: '',
     projectType: '',
     budget: '',
     message: '',
@@ -180,12 +181,12 @@ export function ContactSection() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="company" className={labelClass}>Company</label>
+                      <label htmlFor="company" className={labelClass}>Organisation</label>
                       <input
                         id="company"
                         name="company"
                         type="text"
-                        placeholder="Your company name"
+                        placeholder="Company, school, or organisation"
                         value={form.company}
                         onChange={handleChange}
                         className={inputClass}
@@ -217,12 +218,12 @@ export function ContactSection() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="eventDate" className={labelClass}>Event Date</label>
+                      <label htmlFor="targetDate" className={labelClass}>Target Launch Date</label>
                       <input
-                        id="eventDate"
-                        name="eventDate"
+                        id="targetDate"
+                        name="targetDate"
                         type="date"
-                        value={form.eventDate}
+                        value={form.targetDate}
                         onChange={handleChange}
                         className={inputClass}
                       />
@@ -267,7 +268,7 @@ export function ContactSection() {
                       name="message"
                       required
                       rows={5}
-                      placeholder="Describe your event, goals, audience, and any specific ideas you have..."
+                      placeholder="Tell us about your audience, their age group, what you want them to learn or do, and any ideas you already have..."
                       value={form.message}
                       onChange={handleChange}
                       className={`${inputClass} resize-none`}

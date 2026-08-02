@@ -113,7 +113,7 @@ export function FeaturedExperiences() {
           <SectionHeader
             eyebrow="Featured Experiences"
             title="Work That Moves People"
-            description="A selection of experiences we've built for brands who wanted more than a booth."
+            description="A selection of the games and gamified experiences we've built, and what they did to the people who played them."
             align="left"
           />
           <Link

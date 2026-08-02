@@ -19,7 +19,7 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeader
           eyebrow="Player Reactions"
-          title="Heard at Our Events"
+          title="Straight From the Players"
           align="center"
           className="mb-16"
         />

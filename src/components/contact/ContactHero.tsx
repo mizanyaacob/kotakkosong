@@ -36,7 +36,7 @@ export function ContactHero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="max-w-lg text-lg leading-relaxed text-white/60"
         >
-          Tell us about your event, your brand, and what you want people to feel. We&apos;ll take it from there.
+          Tell us who your audience is and what you need them to learn, do, or remember. We&apos;ll take it from there.
         </motion.p>
       </div>
     </section>

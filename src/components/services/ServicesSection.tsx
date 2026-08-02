@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Gamepad2, Layers, Zap, Monitor, Trophy, Users } from 'lucide-react'
+import { Gamepad2, Layers, Zap, Trophy, GraduationCap } from 'lucide-react'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 import { services } from '@/data/services'
 import type { LucideIcon } from 'lucide-react'
@@ -10,9 +10,8 @@ const iconMap: Record<string, LucideIcon> = {
   Gamepad2,
   Layers,
   Zap,
-  Monitor,
   Trophy,
-  Users,
+  GraduationCap,
 }
 
 function ServiceCard({ service, index }: { service: (typeof services)[number]; index: number }) {
@@ -67,8 +66,8 @@ export function ServicesSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeader
           eyebrow="What We Do"
-          title="Engagement Solutions That Actually Work"
-          description="Every experience we build is designed with one goal: to stop people in their tracks, pull them in, and make them stay longer."
+          title="Gamification That Actually Changes Behaviour"
+          description="Classrooms, campaigns, training rooms, retail floors. Different rooms, same problem: getting people to engage. We solve it with game design."
           align="center"
           className="mb-16"
         />

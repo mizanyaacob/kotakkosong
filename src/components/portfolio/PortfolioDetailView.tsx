@@ -387,7 +387,7 @@ export function PortfolioDetailView({ item, next, prev }: Props) {
                   Want something like this?
                 </h3>
                 <p className="mb-5 text-sm text-soft-black/60">
-                  Tell us about your event and we&apos;ll design an experience around your brand.
+                  Tell us about your audience and objective, and we&apos;ll design a game around it.
                 </p>
                 <Link
                   href="/contact"

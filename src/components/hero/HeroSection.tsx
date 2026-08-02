@@ -53,7 +53,7 @@ export function HeroSection() {
           >
             <span className="h-px w-8 bg-yellow" />
             <span className="text-xs font-semibold uppercase tracking-widest text-yellow">
-              Interactive Experience Studio
+              Gamification Provider
             </span>
           </motion.div>
 
@@ -63,9 +63,9 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="font-heading mb-6 text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl"
           >
-            Creating{' '}
+            We{' '}
             <span className="relative inline-block">
-              <span className="text-yellow">Experiences</span>
+              <span className="text-yellow">Gamify</span>
               <motion.span
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
@@ -74,9 +74,9 @@ export function HeroSection() {
               />
             </span>
             <br />
-            People{' '}
+            What People{' '}
             <span className="relative inline-block">
-              <span className="text-yellow">Never Forget</span>
+              <span className="text-yellow">Usually Ignore</span>
               <motion.span
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
@@ -92,7 +92,7 @@ export function HeroSection() {
             transition={{ duration: 0.7, delay: 0.55 }}
             className="mb-10 max-w-xl text-lg leading-relaxed text-white/65"
           >
-            While others hand out flyers, your brand will have a crowd. We build interactive experiences that attract more visitors, hold attention longer, and leave your competitors wondering how you did it.
+            Lessons, campaigns, training, loyalty programmes: most of it gets tuned out. We turn it into something people actually want to play, come back to, and tell someone else about, whether they&apos;re four years old or forty.
           </motion.p>
 
           <motion.div
@@ -124,7 +124,7 @@ export function HeroSection() {
             className="mt-16 flex flex-wrap gap-8"
           >
             {[
-              { value: '5', label: 'Experiences Built' },
+              { value: '5', label: 'Games Built' },
               { value: '3+', label: 'Years Building' },
               { value: 'MY', label: 'Based in Malaysia' },
             ].map((stat) => (

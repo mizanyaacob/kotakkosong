@@ -18,17 +18,17 @@ export function StorySection() {
           <div className="space-y-5 text-soft-black/60">
             <FadeIn direction="up" delay={0.1}>
               <p className="leading-relaxed">
-                Kotak Kosong was born from a simple observation: at most events and exhibitions, visitors walk past booth after booth without stopping. They scan QR codes nobody asked for. They collect brochures they&apos;ll never read.
+                Kotak Kosong was born from a simple observation: at most events and exhibitions, visitors walk past booth after booth without stopping. They scan QR codes nobody asked for. They collect brochures they&apos;ll never read. Attention was being asked for, never earned.
               </p>
             </FadeIn>
             <FadeIn direction="up" delay={0.2}>
               <p className="leading-relaxed">
-                We asked: <em className="font-semibold text-soft-black">what if people actually wanted to be there?</em> What if the brand experience was so compelling that visitors sought it out, stayed longer, and told their friends?
+                We asked: <em className="font-semibold text-soft-black">what if people actually wanted to be there?</em> What if the experience was compelling enough that people sought it out, stayed longer, and told their friends? Game designers have been solving that exact problem for decades.
               </p>
             </FadeIn>
             <FadeIn direction="up" delay={0.3}>
               <p className="leading-relaxed">
-                That question became our studio. Today we design, build, and operate interactive experiences for exhibitions, roadshows, product launches, and brand activations across Malaysia, helping brands turn passive visitors into active participants.
+                That question became our studio. We started on event floors, but the problem turned out to be everywhere: a teacher losing a room of five-year-olds, a training module nobody finishes, a loyalty app nobody opens twice. So today we work as a gamification provider across all of it, education included, from early childhood learning to corporate training, alongside the campaigns and activations we started with.
               </p>
             </FadeIn>
           </div>
@@ -37,7 +37,7 @@ export function StorySection() {
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {[
               { label: 'Mission', text: 'Creating experiences people remember.' },
-              { label: 'Vision', text: 'Making every event more engaging.' },
+              { label: 'Vision', text: 'Making anything worth engaging with playable.' },
             ].map((item) => (
               <FadeIn key={item.label} direction="up" delay={0.3}>
                 <div className="rounded-2xl border border-medium-gray p-6">

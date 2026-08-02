@@ -8,41 +8,41 @@ import { FadeIn } from '@/components/animations/FadeIn'
 const stats = [
   {
     value: '300%+',
-    label: 'Engagement Increase',
-    description: 'Average boost in booth foot traffic compared to traditional static displays.',
+    label: 'More Participation',
+    description: 'Playable formats consistently out-pull the same content delivered passively.',
   },
   {
     value: '2X',
-    label: 'Visitor Retention',
-    description: 'Visitors stay twice as long at interactive experiences vs passive displays.',
+    label: 'Time On Task',
+    description: 'People stay with a task far longer when it is structured as a game.',
   },
   {
     value: '10,000+',
-    label: 'Participants Per Event',
-    description: 'Average number of people who interact with our experiences at large events.',
+    label: 'Players Engaged',
+    description: 'Across classrooms, campaigns, exhibitions, and training rooms.',
   },
   {
     value: '92%',
-    label: 'Brand Recall',
-    description: 'Participants still remember the brand experience 7 days after the event.',
+    label: 'Recall After 7 Days',
+    description: 'People remember what they played long after they forget what they were shown.',
   },
 ]
 
 const reasons = [
   {
-    title: 'People naturally seek novelty',
+    title: 'People are wired to chase progress',
     description:
-      'Interactive experiences stand out in crowded event environments. When something moves, responds, or reacts, people stop.',
+      'A clear goal, a simple rule set, and feedback on every attempt. That loop works the same way on a five-year-old and a boardroom.',
   },
   {
-    title: 'Participation creates emotional connection',
+    title: 'Participation beats presentation',
     description:
-      'When visitors actively engage rather than passively watch, they form deeper connections with your brand story.',
+      'Doing something builds memory that watching something never does. Play turns an audience into participants, and participants remember.',
   },
   {
-    title: 'Social sharing amplifies reach',
+    title: 'Play makes repetition bearable',
     description:
-      'Great experiences get photographed and shared. Your event activation becomes content that travels far beyond the venue.',
+      'Practice is where learning, habits, and loyalty are actually built. Games get people to volunteer for the reps.',
   },
 ]
 
@@ -57,7 +57,7 @@ export function WhyItWorksSection() {
         <SectionHeader
           eyebrow="Why It Works"
           title="The Science Behind Engagement"
-          description="Interactive experiences aren't just fun. They're proven to drive measurable results for brands."
+          description="Gamification isn't just fun. The mechanics underneath it are how people learn, form habits, and keep coming back."
           align="center"
           dark
           className="mb-20"

@@ -8,13 +8,13 @@ const steps = [
   {
     number: '01',
     title: 'Discover',
-    description: 'We dig deep into your brand, your audience, and your event goals to understand what success really looks like.',
+    description: 'We dig into your audience, your setting, and your objective to understand what success really looks like.',
     icon: '🔍',
   },
   {
     number: '02',
     title: 'Design',
-    description: 'Our creative team crafts experience concepts that align your brand story with what your audience wants to feel.',
+    description: 'We design the game loop: the goal, the rules, the rewards, and the mechanics that fit your audience and their age.',
     icon: '✏️',
   },
   {
@@ -26,19 +26,19 @@ const steps = [
   {
     number: '04',
     title: 'Deploy',
-    description: 'Our team handles on-site setup, tech checks, and goes live with you so everything runs perfectly from day one.',
+    description: 'We handle setup, tech checks, and staff or educator onboarding, then go live with you so day one runs properly.',
     icon: '🚀',
   },
   {
     number: '05',
     title: 'Engage',
-    description: 'Visitors interact, participate, and create moments, while we monitor, support, and optimize in real time.',
+    description: 'Players play, learn, and keep coming back, while we monitor, support, and optimise in real time.',
     icon: '⚡',
   },
   {
     number: '06',
     title: 'Measure',
-    description: 'After the event, we deliver a full engagement report with data on participation, retention, and ROI.',
+    description: 'We deliver a full engagement report with data on participation, progress, retention, and outcomes.',
     icon: '📊',
   },
 ]
@@ -54,7 +54,7 @@ export function ExperienceJourney() {
         <SectionHeader
           eyebrow="Our Process"
           title="How We Bring Experiences to Life"
-          description="From initial brief to post-event insights: a proven process that makes every project exceptional."
+          description="From the first brief to the post-launch numbers: one process, whether it ends up in a classroom or on an exhibition floor."
           align="center"
           className="mb-20"
         />

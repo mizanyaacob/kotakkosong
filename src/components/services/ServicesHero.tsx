@@ -27,7 +27,7 @@ export function ServicesHero() {
           className="font-heading mb-6 max-w-3xl text-5xl font-bold leading-tight tracking-tight text-white md:text-6xl"
         >
           Everything You Need to{' '}
-          <span className="text-yellow">Own the Room</span>
+          <span className="text-yellow">Turn It Into a Game</span>
         </motion.h1>
 
         <motion.p
@@ -36,7 +36,7 @@ export function ServicesHero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="max-w-xl text-lg leading-relaxed text-white/60"
         >
-          From bespoke event games to full-scale brand activations, we design and build experiences that make your brand the most exciting thing in the room.
+          From early learning games to training simulations, campaigns, and loyalty systems, we design and build the mechanics that make people want to take part.
         </motion.p>
       </div>
     </section>

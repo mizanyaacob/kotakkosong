@@ -26,8 +26,8 @@ export function AboutHero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="font-heading mb-6 max-w-3xl text-5xl font-bold leading-tight tracking-tight text-white md:text-6xl"
         >
-          We Build Moments That{' '}
-          <span className="text-yellow">People Can&apos;t Forget</span>
+          We Turn Things People Ignore{' '}
+          <span className="text-yellow">Into Things They Play</span>
         </motion.h1>
 
         <motion.p
@@ -36,7 +36,7 @@ export function AboutHero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="max-w-2xl text-lg leading-relaxed text-white/60"
         >
-          Kotak Kosong Studios is Malaysia&apos;s creative force for interactive event experiences. We blend technology, design, and human psychology to create activations that stop people, pull them in, and leave a lasting impression on your brand.
+          Kotak Kosong Studios is a Malaysian gamification provider. We blend game design, technology, and human psychology to build experiences that pull people in and keep them there, in classrooms, campaigns, training rooms, and everywhere else attention is hard to win.
         </motion.p>
       </div>
     </section>

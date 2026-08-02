@@ -23,19 +23,22 @@ export const metadata: Metadata = {
     apple: '/images/logo/kotakkosong-logo.jpeg',
   },
   title: {
-    default: 'Kotak Kosong Studios | Interactive Event Experiences & Brand Activations',
+    default: 'Kotak Kosong Studios | Gamification Provider & Custom Game Development',
     template: '%s | Kotak Kosong Studios',
   },
   description:
-    'Kotak Kosong Studios creates interactive event experiences, custom event games, and engaging brand activations that attract visitors and create memorable moments.',
+    'Kotak Kosong Studios is a Malaysian gamification provider. We design custom games, gamified learning, campaigns, loyalty systems, and training for schools, brands, and organisations, from early childhood classrooms to corporate onboarding.',
   keywords: [
-    'interactive event experiences',
-    'brand activations Malaysia',
-    'event games',
-    'exhibition engagement',
-    'experiential marketing',
-    'digital installations',
-    'gamification events',
+    'gamification Malaysia',
+    'gamification provider',
+    'gamification in education',
+    'early childhood learning games',
+    'educational game development',
+    'custom game development',
+    'gamified marketing campaigns',
+    'loyalty and rewards gamification',
+    'gamified training and simulation',
+    'gamification strategy',
     'Kotak Kosong Studios',
   ],
   authors: [{ name: 'Kotak Kosong Studios' }],
@@ -46,9 +49,9 @@ export const metadata: Metadata = {
     locale: 'en_MY',
     url: 'https://kotakkosong.studio',
     siteName: 'Kotak Kosong Studios',
-    title: 'Kotak Kosong Studios | Interactive Event Experiences & Brand Activations',
+    title: 'Kotak Kosong Studios | Gamification Provider & Custom Game Development',
     description:
-      'We create interactive experiences that attract people, engage them, and leave lasting memories.',
+      'We use game design to make people participate, come back, and remember. Learning, campaigns, training, loyalty, and live experiences.',
     images: [
       {
         url: '/images/og-image.jpg',
@@ -61,7 +64,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Kotak Kosong Studios',
-    description: 'Interactive event experiences & brand activations that people remember.',
+    description: 'Gamification and custom games that turn audiences, students, and teams into players.',
     images: ['/images/og-image.jpg'],
   },
   robots: {

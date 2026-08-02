@@ -36,7 +36,7 @@ export function PortfolioHero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="max-w-xl text-lg leading-relaxed text-white/60"
         >
-          A curated showcase of interactive experiences, brand activations, and event installations we&apos;ve built for brands across Malaysia.
+          A curated showcase of the games and gamified experiences we&apos;ve built and deployed across Malaysia.
         </motion.p>
       </div>
     </section>
