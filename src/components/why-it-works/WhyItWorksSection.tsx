@@ -78,7 +78,7 @@ export function WhyItWorksSection() {
                 <AnimatedCounter value={stat.value} />
               </span>
               <span className="font-heading text-lg font-semibold text-white">{stat.label}</span>
-              <p className="text-sm leading-relaxed text-white/40">{stat.description}</p>
+              <p className="text-sm leading-relaxed text-white/55">{stat.description}</p>
             </motion.div>
           ))}
         </div>

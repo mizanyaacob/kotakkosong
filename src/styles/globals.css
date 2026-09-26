@@ -3,6 +3,9 @@
 @theme {
   /* Brand Colors */
   --color-yellow: #FFD400;
+  /* Accessible amber for text on WHITE / LIGHT-GRAY. Brand yellow on white is
+     only 1.43:1 and fails WCAG AA; this passes at 5.07:1 (white) / 4.65:1 (gray). */
+  --color-yellow-ink: #8A6A00;
   --color-yellow-dark: #E6BF00;
   --color-yellow-light: #FFE066;
   --color-soft-black: #111111;
@@ -50,6 +53,40 @@
   ::selection {
     background-color: var(--color-yellow);
     color: var(--color-soft-black);
+  }
+
+  /* Visible keyboard focus on every interactive control.
+     :focus-visible keeps it off mouse clicks but on for keyboard users. */
+  :focus-visible {
+    outline: 3px solid var(--color-yellow);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  /* On yellow surfaces the yellow ring is invisible - invert it. */
+  .bg-yellow :focus-visible,
+  .bg-yellow:focus-visible {
+    outline-color: var(--color-soft-black);
+  }
+
+  /* Respect the OS "reduce motion" setting. The site is motion-heavy
+     (parallax hero, marquee, floating shapes, scroll reveals), which is a
+     documented nausea trigger. Collapse it all to the final readable state. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    /* Ambient decorative layers add nothing without motion. */
+    .motion-decor {
+      display: none !important;
+    }
   }
 }
 

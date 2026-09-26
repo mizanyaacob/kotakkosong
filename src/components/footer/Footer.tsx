@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Instagram, Linkedin, Facebook, Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
 
 const services = [
@@ -23,14 +24,14 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="group mb-6 flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow">
-                <span className="text-[13px] font-black leading-none text-soft-black">KK</span>
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-heading text-base font-bold text-white">Kotak Kosong</span>
-                <span className="text-[10px] font-medium uppercase tracking-widest text-white/40">Studios</span>
-              </div>
+            <Link href="/" className="group mb-6 inline-block">
+              <Image
+                src="/images/logo/kotakkosong-logo.png"
+                alt="Kotak Kosong Studios"
+                width={97}
+                height={48}
+                className="h-12 w-auto object-contain transition-opacity duration-300 group-hover:opacity-80"
+              />
             </Link>
             <p className="mb-6 text-sm leading-relaxed text-white/50">
               A Malaysian gamification provider. We use game design to turn learning, training, and campaigns into something people choose to do, not something they have to sit through.
@@ -68,7 +69,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-white/30">
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-white/50">
               Services
             </h3>
             <ul className="space-y-3">
@@ -88,7 +89,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-white/30">
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-white/50">
               Company
             </h3>
             <ul className="space-y-3">
@@ -107,7 +108,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-white/30">
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-white/50">
               Contact
             </h3>
             <ul className="space-y-4">
@@ -142,10 +143,10 @@ export function Footer() {
 
       <div className="border-t border-white/5">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row lg:px-8">
-          <p className="text-xs text-white/30">
+          <p className="text-xs text-white/50">
             © {new Date().getFullYear()} Kotak Kosong Studios. All rights reserved.
           </p>
-          <p className="text-xs text-white/20">
+          <p className="text-xs text-white/50">
             Crafting experiences people remember.
           </p>
         </div>

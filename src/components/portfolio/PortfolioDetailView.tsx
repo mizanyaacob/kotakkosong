@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { SafeImage } from '@/components/shared/SafeImage'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -143,7 +143,7 @@ function Lightbox({
         ))}
       </div>
 
-      <div className="absolute bottom-5 right-6 text-xs text-white/30">
+      <div className="absolute bottom-5 right-6 text-xs text-white/50">
         {index + 1} / {items.length}
       </div>
     </motion.div>
@@ -250,7 +250,7 @@ export function PortfolioDetailView({ item, next, prev }: Props) {
                 <ArrowLeft size={14} />
                 All Work
               </Link>
-              <span className="text-white/20">/</span>
+              <span className="text-white/50">/</span>
               <span className="rounded-full bg-yellow px-3 py-1 text-xs font-bold text-soft-black">
                 {item.category}
               </span>
@@ -310,7 +310,7 @@ export function PortfolioDetailView({ item, next, prev }: Props) {
               >
                 <div>
                   <div className="mb-4 flex items-center gap-2">
-                    <Target size={16} className="text-yellow" />
+                    <Target size={16} className="text-yellow-ink" />
                     <h3 className="font-heading text-lg font-bold text-soft-black">Objectives</h3>
                   </div>
                   <ul className="space-y-3">
@@ -324,13 +324,13 @@ export function PortfolioDetailView({ item, next, prev }: Props) {
                 </div>
                 <div>
                   <div className="mb-4 flex items-center gap-2">
-                    <TrendingUp size={16} className="text-yellow" />
+                    <TrendingUp size={16} className="text-yellow-ink" />
                     <h3 className="font-heading text-lg font-bold text-soft-black">Outcomes</h3>
                   </div>
                   <ul className="space-y-3">
                     {item.outcomes.map((o) => (
                       <li key={o} className="flex items-start gap-2.5 text-sm text-soft-black/60">
-                        <CheckCircle2 size={14} className="mt-0.5 shrink-0 text-yellow" />
+                        <CheckCircle2 size={14} className="mt-0.5 shrink-0 text-yellow-ink" />
                         {o}
                       </li>
                     ))}
@@ -348,7 +348,7 @@ export function PortfolioDetailView({ item, next, prev }: Props) {
             >
               {/* Results */}
               <div className="rounded-2xl bg-soft-black p-7">
-                <h3 className="font-heading mb-5 text-sm font-bold uppercase tracking-widest text-white/40">
+                <h3 className="font-heading mb-5 text-sm font-bold uppercase tracking-widest text-white/55">
                   Impact
                 </h3>
                 <div className="space-y-5">
@@ -364,8 +364,8 @@ export function PortfolioDetailView({ item, next, prev }: Props) {
               {/* Technologies */}
               <div>
                 <div className="mb-4 flex items-center gap-2">
-                  <Cpu size={14} className="text-soft-black/40" />
-                  <h3 className="font-heading text-sm font-bold uppercase tracking-widest text-soft-black/40">
+                  <Cpu size={14} className="text-soft-black/60" />
+                  <h3 className="font-heading text-sm font-bold uppercase tracking-widest text-soft-black/60">
                     Technologies
                   </h3>
                 </div>
@@ -386,7 +386,7 @@ export function PortfolioDetailView({ item, next, prev }: Props) {
                 <h3 className="font-heading mb-2 text-lg font-bold text-soft-black">
                   Want something like this?
                 </h3>
-                <p className="mb-5 text-sm text-soft-black/60">
+                <p className="mb-5 text-sm text-soft-black/75">
                   Tell us about your audience and objective, and we&apos;ll design a game around it.
                 </p>
                 <Link
@@ -409,7 +409,7 @@ export function PortfolioDetailView({ item, next, prev }: Props) {
             href={`/portfolio/${prev.slug}`}
             className="group flex flex-col gap-1 py-8 pr-8 transition-colors hover:text-soft-black"
           >
-            <span className="flex items-center gap-1.5 text-xs text-soft-black/40 transition-colors group-hover:text-yellow">
+            <span className="flex items-center gap-1.5 text-xs text-soft-black/60 transition-colors group-hover:text-yellow">
               <ArrowLeft size={12} /> Previous
             </span>
             <span className="font-heading text-base font-bold text-soft-black line-clamp-1">{prev.title}</span>
@@ -418,7 +418,7 @@ export function PortfolioDetailView({ item, next, prev }: Props) {
             href={`/portfolio/${next.slug}`}
             className="group flex flex-col items-end gap-1 py-8 pl-8 transition-colors"
           >
-            <span className="flex items-center gap-1.5 text-xs text-soft-black/40 transition-colors group-hover:text-yellow">
+            <span className="flex items-center gap-1.5 text-xs text-soft-black/60 transition-colors group-hover:text-yellow">
               Next <ArrowRight size={12} />
             </span>
             <span className="font-heading text-base font-bold text-soft-black line-clamp-1">{next.title}</span>

@@ -52,7 +52,7 @@ function PortfolioCard({ item, index }: { item: PortfolioItem; index: number }) 
 
       {/* Content */}
       <div className="p-6">
-        <p className="mb-1 text-xs font-medium text-white/35">{item.client} · {item.year}</p>
+        <p className="mb-1 text-xs font-medium text-white/50">{item.client} · {item.year}</p>
         <h3 className="font-heading mb-3 text-lg font-bold text-white">{item.title}</h3>
         <p className="mb-5 text-sm leading-relaxed text-white/50 line-clamp-2">{item.description}</p>
 
@@ -61,7 +61,7 @@ function PortfolioCard({ item, index }: { item: PortfolioItem; index: number }) 
           {item.results.map((r) => (
             <div key={r.label} className="rounded-lg bg-white/5 px-3 py-1.5">
               <span className="font-heading text-sm font-bold text-yellow">{r.value}</span>
-              <span className="ml-1.5 text-[10px] text-white/35">{r.label}</span>
+              <span className="ml-1.5 text-[10px] text-white/50">{r.label}</span>
             </div>
           ))}
         </div>
@@ -82,12 +82,13 @@ export function PortfolioGrid() {
     <section className="bg-light-gray py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Filter tabs */}
-        <div className="mb-12 flex flex-wrap items-center gap-2">
+        <div role="group" aria-label="Filter projects by category" className="mb-12 flex flex-wrap items-center gap-2">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`rounded-full px-5 py-2 text-sm font-semibold transition-all ${
+              aria-pressed={activeCategory === cat}
+              className={`min-h-11 rounded-full px-5 py-2 text-sm font-semibold transition-all ${
                 activeCategory === cat
                   ? 'bg-soft-black text-white shadow-md'
                   : 'border border-medium-gray bg-white text-soft-black/60 hover:bg-white hover:text-soft-black'
@@ -99,7 +100,7 @@ export function PortfolioGrid() {
         </div>
 
         {/* Grid */}
-        <motion.div layout className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <motion.div layout aria-live="polite" className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {filtered.map((item, i) => (
               <PortfolioCard key={item.id} item={item} index={i} />
@@ -108,7 +109,7 @@ export function PortfolioGrid() {
         </motion.div>
 
         {filtered.length === 0 && (
-          <div className="py-20 text-center text-soft-black/40">
+          <div className="py-20 text-center text-soft-black/60">
             No projects found in this category yet.
           </div>
         )}

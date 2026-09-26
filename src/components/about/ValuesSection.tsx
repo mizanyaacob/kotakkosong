@@ -59,7 +59,7 @@ export function ValuesSection() {
             >
               <span className="text-4xl">{value.icon}</span>
               <h3 className="font-heading text-lg font-bold text-soft-black">{value.title}</h3>
-              <p className="text-sm leading-relaxed text-soft-black/55">{value.description}</p>
+              <p className="text-sm leading-relaxed text-soft-black/65">{value.description}</p>
               <div className="mt-2 h-0.5 w-8 bg-yellow opacity-0 transition-opacity group-hover:opacity-100" />
             </motion.div>
           ))}

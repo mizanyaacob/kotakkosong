@@ -83,7 +83,7 @@ interface FloatingShapesProps {
 export function FloatingShapes({ count }: FloatingShapesProps) {
   const displayShapes = count ? shapes.slice(0, count) : shapes
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden">
+    <div aria-hidden="true" className="motion-decor pointer-events-none absolute inset-0 overflow-hidden">
       {displayShapes.map((shape) => (
         <ShapeElement key={shape.id} shape={shape} />
       ))}

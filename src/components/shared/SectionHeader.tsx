@@ -37,7 +37,12 @@ export function SectionHeader({
           className="flex items-center gap-2"
         >
           <span className="block h-px w-8 bg-yellow" />
-          <span className="text-xs font-semibold uppercase tracking-widest text-yellow">
+          <span
+            className={cn(
+              'text-xs font-semibold uppercase tracking-widest',
+              dark ? 'text-yellow' : 'text-yellow-ink'
+            )}
+          >
             {eyebrow}
           </span>
         </motion.div>

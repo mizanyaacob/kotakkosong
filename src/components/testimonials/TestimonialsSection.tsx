@@ -24,9 +24,9 @@ export function TestimonialsSection() {
           className="mb-16"
         />
 
-        <div className="relative mx-auto max-w-4xl">
+        <div className="relative mx-auto max-w-4xl" role="region" aria-roledescription="carousel" aria-label="Player reactions">
           {/* Main card */}
-          <div className="relative overflow-hidden rounded-3xl bg-soft-black p-10 md:p-16">
+          <div aria-live="polite" aria-atomic="true" className="relative overflow-hidden rounded-3xl bg-soft-black p-10 md:p-16">
             <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-yellow/8" />
             <div className="pointer-events-none absolute right-10 top-10 text-yellow/10">
               <Quote size={80} strokeWidth={1} />
@@ -47,7 +47,7 @@ export function TestimonialsSection() {
 
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10">
-                    <UserRound size={22} className="text-white/40" />
+                    <UserRound size={22} className="text-white/55" />
                   </div>
                   <div>
                     <p className="font-heading font-bold text-white">{current.name}</p>
@@ -66,10 +66,18 @@ export function TestimonialsSection() {
                   key={i}
                   onClick={() => setActive(i)}
                   aria-label={`Go to testimonial ${i + 1}`}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i === active ? 'w-8 bg-yellow' : 'w-1.5 bg-medium-gray hover:bg-soft-black/30'
-                  }`}
-                />
+                  aria-current={i === active ? 'true' : undefined}
+                  /* Dot stays visually small, but the tappable box is 44x44. */
+                  className="group/dot flex h-11 w-5 items-center justify-center"
+                >
+                  <span
+                    className={`block h-1.5 rounded-full transition-all duration-300 ${
+                      i === active
+                        ? 'w-8 bg-yellow'
+                        : 'w-1.5 bg-medium-gray group-hover/dot:bg-soft-black/50'
+                    }`}
+                  />
+                </button>
               ))}
             </div>
 
@@ -77,7 +85,7 @@ export function TestimonialsSection() {
               <button
                 onClick={prev}
                 aria-label="Previous testimonial"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-medium-gray text-soft-black/50 transition-all hover:border-yellow hover:text-soft-black"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-medium-gray text-soft-black/60 transition-all hover:border-yellow hover:text-soft-black"
               >
                 <ChevronLeft size={18} />
               </button>
