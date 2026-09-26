@@ -2,12 +2,13 @@
 
 import { useRef } from 'react'
 import Link from 'next/link'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { ArrowRight, ChevronDown, Play } from 'lucide-react'
 import { FloatingShapes } from '@/components/animations/FloatingShapes'
 
 export function HeroSection() {
   const ref = useRef<HTMLElement>(null)
+  const reduceMotion = useReducedMotion()
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '30%'])
   const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0])
@@ -16,16 +17,28 @@ export function HeroSection() {
     <section ref={ref} className="relative flex h-screen min-h-[700px] items-center overflow-hidden bg-soft-black">
       <div className="absolute inset-0">
         <motion.div style={{ y }} className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="h-full w-full object-cover opacity-30"
-            poster="/images/hero-poster.jpg"
-          >
-            <source src="https://res.cloudinary.com/dcajsi7py/video/upload/v1780773061/0606_1_fjzypn.mp4" type="video/mp4" />
-          </video>
+          {reduceMotion ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src="/images/hero-poster.jpg"
+              alt=""
+              aria-hidden="true"
+              className="h-full w-full object-cover opacity-30"
+            />
+          ) : (
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-hidden="true"
+              tabIndex={-1}
+              className="h-full w-full object-cover opacity-30"
+              poster="/images/hero-poster.jpg"
+            >
+              <source src="https://res.cloudinary.com/dcajsi7py/video/upload/v1780773061/0606_1_fjzypn.mp4" type="video/mp4" />
+            </video>
+          )}
         </motion.div>
         <div className="absolute inset-0 bg-linear-to-b from-soft-black/60 via-soft-black/40 to-soft-black/80" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_30%,rgba(255,212,0,0.08)_0%,transparent_60%)]" />
@@ -130,7 +143,7 @@ export function HeroSection() {
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col gap-1">
                 <span className="font-heading text-2xl font-bold text-yellow">{stat.value}</span>
-                <span className="text-xs text-white/40">{stat.label}</span>
+                <span className="text-xs text-white/55">{stat.label}</span>
               </div>
             ))}
           </motion.div>
@@ -146,7 +159,7 @@ export function HeroSection() {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-          className="flex flex-col items-center gap-1.5 text-white/30"
+          className="flex flex-col items-center gap-1.5 text-white/50"
         >
           <span className="text-[10px] uppercase tracking-widest">Scroll</span>
           <ChevronDown size={16} />

@@ -72,7 +72,7 @@ function ExperienceCard({ item, index }: { item: (typeof featured)[number]; inde
 
       {/* Content */}
       <div className="p-6">
-        <p className="mb-1 text-xs font-medium text-white/40">{item.client} · {item.year}</p>
+        <p className="mb-1 text-xs font-medium text-white/55">{item.client} · {item.year}</p>
         <h3 className="font-heading mb-2 text-xl font-bold text-white">{item.title}</h3>
         <p className="mb-4 text-sm leading-relaxed text-white/55 line-clamp-2">{item.description}</p>
 
@@ -81,7 +81,7 @@ function ExperienceCard({ item, index }: { item: (typeof featured)[number]; inde
           {item.results.map((r) => (
             <div key={r.label} className="rounded-lg bg-white/5 px-3 py-2">
               <span className="block font-heading text-base font-bold text-yellow">{r.value}</span>
-              <span className="block text-[10px] text-white/40">{r.label}</span>
+              <span className="block text-[10px] text-white/55">{r.label}</span>
             </div>
           ))}
         </div>

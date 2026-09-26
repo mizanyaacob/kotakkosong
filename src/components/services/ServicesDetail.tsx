@@ -46,7 +46,7 @@ export function ServicesDetail() {
 
                 {/* Content */}
                 <div className="flex flex-col justify-center">
-                  <span className="mb-3 block text-xs font-bold uppercase tracking-widest text-yellow">
+                  <span className="mb-3 block text-xs font-bold uppercase tracking-widest text-yellow-ink">
                     0{i + 1}
                   </span>
                   <h2 className="font-heading mb-4 text-3xl font-bold text-soft-black lg:text-4xl">
@@ -58,13 +58,13 @@ export function ServicesDetail() {
 
                   {detail && (
                     <div className="mb-6">
-                      <h4 className="mb-3 text-xs font-bold uppercase tracking-widest text-soft-black/40">
+                      <h4 className="mb-3 text-xs font-bold uppercase tracking-widest text-soft-black/60">
                         Key Benefits
                       </h4>
                       <ul className="space-y-2">
                         {detail.benefits.map((b) => (
                           <li key={b} className="flex items-start gap-2.5 text-sm text-soft-black/65">
-                            <CheckCircle2 size={15} className="mt-0.5 shrink-0 text-yellow" />
+                            <CheckCircle2 size={15} className="mt-0.5 shrink-0 text-yellow-ink" />
                             {b}
                           </li>
                         ))}
@@ -73,7 +73,7 @@ export function ServicesDetail() {
                   )}
 
                   <div>
-                    <h4 className="mb-3 text-xs font-bold uppercase tracking-widest text-soft-black/40">
+                    <h4 className="mb-3 text-xs font-bold uppercase tracking-widest text-soft-black/60">
                       What You Get
                     </h4>
                     <div className="flex flex-wrap gap-2">

@@ -26,7 +26,7 @@ export function CTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-5 text-xs font-semibold uppercase tracking-widest text-soft-black/50"
+          className="mb-5 text-xs font-semibold uppercase tracking-widest text-soft-black/75"
         >
           Ready to get started?
         </motion.p>
@@ -48,7 +48,7 @@ export function CTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mx-auto mb-12 max-w-xl text-lg text-soft-black/60"
+          className="mx-auto mb-12 max-w-xl text-lg text-soft-black/75"
         >
           Tell us what you need people to learn, do, or remember. We&apos;ll show you how to turn it into the thing they can&apos;t wait to do again.
         </motion.p>
@@ -81,7 +81,7 @@ export function CTASection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-14 flex flex-wrap items-center justify-center gap-8 text-soft-black/40"
+          className="mt-14 flex flex-wrap items-center justify-center gap-8 text-soft-black/75"
         >
           {['Education, Brand & Corporate', 'Based in Malaysia', 'Free Consultation'].map((item) => (
             <div key={item} className="flex items-center gap-2 text-sm">

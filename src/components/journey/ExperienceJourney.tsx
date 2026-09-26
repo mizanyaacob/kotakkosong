@@ -87,9 +87,9 @@ export function ExperienceJourney() {
                     {step.icon}
                   </div>
                 </div>
-                <span className="font-heading text-xs font-bold text-yellow">{step.number}</span>
+                <span className="font-heading text-xs font-bold text-yellow-ink">{step.number}</span>
                 <h3 className="font-heading text-lg font-bold text-soft-black">{step.title}</h3>
-                <p className="text-xs leading-relaxed text-soft-black/50">{step.description}</p>
+                <p className="text-xs leading-relaxed text-soft-black/60">{step.description}</p>
               </motion.div>
             ))}
           </div>
@@ -115,9 +115,9 @@ export function ExperienceJourney() {
               </div>
               {/* Content */}
               <div className="pb-10 pt-2">
-                <span className="mb-1 block text-xs font-bold text-yellow">{step.number}</span>
+                <span className="mb-1 block text-xs font-bold text-yellow-ink">{step.number}</span>
                 <h3 className="font-heading mb-2 text-lg font-bold text-soft-black">{step.title}</h3>
-                <p className="text-sm leading-relaxed text-soft-black/50">{step.description}</p>
+                <p className="text-sm leading-relaxed text-soft-black/60">{step.description}</p>
               </div>
             </motion.div>
           ))}

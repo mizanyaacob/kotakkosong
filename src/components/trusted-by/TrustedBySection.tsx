@@ -25,7 +25,7 @@ function TechItem({ name, file }: { name: string; file: string }) {
           sizes="112px"
         />
       </div>
-      <span className="whitespace-nowrap text-sm font-semibold text-soft-black/50 transition-colors duration-300 group-hover:text-soft-black">
+      <span className="whitespace-nowrap text-sm font-semibold text-soft-black/60 transition-colors duration-300 group-hover:text-soft-black">
         {name}
       </span>
     </div>
@@ -45,8 +45,19 @@ export function TrustedBySection() {
           width: max-content;
           animation: marquee-scroll 36s linear infinite;
         }
-        .marquee-track:hover {
+        .marquee-track:hover,
+        .marquee-track:focus-within {
           animation-play-state: paused;
+        }
+        /* An endless sideways crawl is a motion-sickness trigger; show the
+           logos statically instead of racing them to the end. */
+        @media (prefers-reduced-motion: reduce) {
+          .marquee-track {
+            animation: none !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+          }
         }
       `}</style>
 

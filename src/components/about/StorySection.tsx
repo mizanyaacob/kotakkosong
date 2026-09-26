@@ -46,7 +46,7 @@ export function StorySection() {
             ].map((item) => (
               <FadeIn key={item.label} direction="up" delay={0.3}>
                 <div className="rounded-2xl border border-medium-gray p-6">
-                  <span className="mb-2 block text-xs font-bold uppercase tracking-widest text-yellow">
+                  <span className="mb-2 block text-xs font-bold uppercase tracking-widest text-yellow-ink">
                     {item.label}
                   </span>
                   <p className="font-heading text-base font-semibold text-soft-black">{item.text}</p>
@@ -71,7 +71,7 @@ export function StorySection() {
               <span className="font-heading text-4xl font-bold text-soft-black">
                 <AnimatedCounter value={stat.value} />
               </span>
-              <span className="text-sm text-soft-black/50">{stat.label}</span>
+              <span className="text-sm text-soft-black/60">{stat.label}</span>
             </div>
           ))}
         </div>

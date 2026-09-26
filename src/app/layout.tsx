@@ -4,6 +4,7 @@ import '@/styles/globals.css'
 import { Navbar } from '@/components/navbar/Navbar'
 import { Footer } from '@/components/footer/Footer'
 import { ScrollProgress } from '@/components/shared/ScrollProgress'
+import { MotionProvider } from '@/components/providers/MotionProvider'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -19,8 +20,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/images/logo/kotakkosong-logo.jpeg',
-    apple: '/images/logo/kotakkosong-logo.jpeg',
+    icon: '/images/logo/kotakkosong-icon.png',
+    apple: '/images/logo/kotakkosong-icon.png',
   },
   title: {
     default: 'Kotak Kosong Studios | Gamification Provider & Custom Game Development',
@@ -88,10 +89,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
       <body>
-        <ScrollProgress />
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-yellow focus:px-5 focus:py-3 focus:font-semibold focus:text-soft-black"
+        >
+          Skip to content
+        </a>
+        <MotionProvider>
+          <ScrollProgress />
+          <Navbar />
+          <main id="main">{children}</main>
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   )
