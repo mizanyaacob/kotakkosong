@@ -5,6 +5,9 @@ node_modules/
 .next/
 out/
 
+# typescript incremental build cache (regenerated on every build)
+*.tsbuildinfo
+
 # misc
 *.zip
 .DS_Store
